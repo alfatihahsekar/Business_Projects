@@ -2,7 +2,7 @@
 This project aimed to perform RFM analysis on an e-commerce dataset to segment customers based on their purchasing behavior. The analysis focused on identifying high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns. E-commerce companies want to segment customers. Marketing strategy will be determined according to these segments. The company listed sales between 2009 and 2011 to categorize customers. Additionally, RFM (Recency, Frequency, Monetary) analysis was performed to develop customer segments and optimize engagement strategies.
 
 # Dataset
-The dataset used for this analysis is the Online Retail II data set, which contains transactions from a UK-based, non-store online retailer between 01/12/2009 and 09/12/2011. The company primarily sells unique, all-occasion giftware, with many customers being wholesalers.
+The dataset used for this analysis is the Online Retail II data set, which contains transactions from a UK-based, non-store online retailer between 01/12/2009 and 09/12/2011. The company primarily sells unique, all-occasion giftware, with many customers being wholesalers. [Link to dataset](https://www.kaggle.com/datasets/ilkeryildiz/online-retail-listing)
 1. InvoiceNo: Invoice number.
 2. StockCode: Product code.
 3. Description: Product name.
@@ -11,7 +11,7 @@ The dataset used for this analysis is the Online Retail II data set, which conta
 6. UnitPrice: Price per unit in sterling (£).
 7. CustomerID: Customer number.
 8. Country: Country of the customer.
-[Link to dataset](https://www.kaggle.com/datasets/ilkeryildiz/online-retail-listing)
+
 
 # Project Goals
 The goal was to segment the customers based on their purchasing behavior and provide actionable insights for marketing strategies. This involved defining customer behaviors, grouping them into clusters, and developing tailored sales and marketing techniques.
@@ -40,10 +40,10 @@ The process was done on Google Colaboratory.
   labels = ['Low-Value', 'Mid-Value', 'High-Value']
   df['RFM_segments'] = pd.qcut(df['RFM_score'], q=3, labels=labels)
   
-  `# Calculate RFM Scores`
-  `df['Recency_scores'] = pd.cut(df['Recency'], bins=5, labels=recency_scores)`
-  `df['Frequency_scores'] = pd.cut(df['Frequency'], bins=5, labels=frequency_scores)`
-  `df['Monetary_scores'] = pd.cut(df['Monetary'], bins=5, labels=monetary_scores)`
+  # Calculate RFM Scores
+  df['Recency_scores'] = pd.cut(df['Recency'], bins=5, labels=recency_scores)
+  df['Frequency_scores'] = pd.cut(df['Frequency'], bins=5, labels=frequency_scores)
+  df['Monetary_scores'] = pd.cut(df['Monetary'], bins=5, labels=monetary_scores)
 ```
 
 **RFM Calculation**
