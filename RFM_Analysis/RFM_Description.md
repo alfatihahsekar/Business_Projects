@@ -19,6 +19,7 @@ The goal was to segment the customers based on their purchasing behavior and pro
 # Methodology
 
 **Data Preparation & Cleaning**
+
 The process was done on Google Colaboratory.
 1. Loaded and cleaned the dataset to handle missing values and correct data types.
 2. Filtered out cancellations and non-relevant transactions.
@@ -47,6 +48,7 @@ The process was done on Google Colaboratory.
 ```
 
 **RFM Calculation**
+
 The process was done on Google Colaboratory.
  1. Recency: Days since the customer's last purchase.
  2. Frequency: Total number of purchases by the customer.
@@ -96,4 +98,5 @@ The process was done on Google Colaboratory.
 
 
 **Conclusion**
+
 The RFM analysis provided valuable insights into customer behavior, allowing the e-commerce company to tailor marketing strategies effectively. By focusing on customer segments with specific characteristics, the company can enhance customer satisfaction, increase retention rates, and drive sales growth
