@@ -25,7 +25,7 @@ The process was done on Google Colaboratory.
 3. Calculated the Recency, Frequency, and Monetary values for each customer.
    ```
    # Define Scoring criteria
-  recency_scores = [5,4,3,2,1] # high score for low recency
+  `recency_scores = [5,4,3,2,1] # high score for low recency`
   frequency_scores = [1,2,3,4,5] # high score for high frequency
   monetary_scores = [1,2,3,4,5] # high score for high monetary
 
