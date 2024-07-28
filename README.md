@@ -5,9 +5,11 @@ Compilation of all my real-world projects
 **Project Goals:** 
 
 The goal was to segment the customers based on their purchasing behavior and provide actionable insights for marketing strategies. This involved defining customer behaviors, grouping them into clusters, and developing tailored sales and marketing techniques.
+
 **Data Source:** 
 
 [Link to dataset](https://www.kaggle.com/datasets/ilkeryildiz/online-retail-listing)
+
 **Conclusion:** 
 
 The RFM analysis provided valuable insights into customer behavior, allowing the e-commerce company to tailor marketing strategies effectively. 
