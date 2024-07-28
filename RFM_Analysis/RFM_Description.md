@@ -34,18 +34,20 @@ The process was done on Google Colaboratory.
 1. Segmented customers into different RFM categories using quintiles.
 2. Assigned RFM scores to each customer based on their Recency, Frequency, and Monetary values.
 3. Grouped customers into segments like "Champions", "Potential Loyalist", "At-Risk Customers", "Can't lost Customer", "Lost Customer", based on their RFM scores.
+![image](https://github.com/user-attachments/assets/46a5146e-32ed-494c-9bc1-f51e48680d7e)
 
 **Data Analysis & Visualization**
 1. Created various visualizations to explore the distribution of RFM values among different customer segments.
 2. Analyzed the retention rate of each segment to understand customer loyalty and engagement.
 
 **Insights & Recommendations**
+![image](https://github.com/user-attachments/assets/727e6fd3-7611-462a-87b8-1820e2f3a1e0)
 1. Champions: Recommend focusing on retention strategies and exclusive offers. Engage with personalized offers and rewards to maintain loyalty
 2. Potential Loyalist: Recommend loyalty programs and personalized offers. Use targeted marketing campaigns to convert potential high-value customers.
 3. At-Risk Customers: Recommend re-engagement campaigns and targeted promotions. 
 4. Can't Lost Customers: Recommend onboarding programs and introductory offers. Implement re-engagement campaigns to bring them back.
 5. Lost Customers: Recommend reactivation campaigns and feedback collection.
-<iframe src="RFM_Analysis/champion_rfm_distribution.html" width="800" height="600"></iframe>
+
 
 **Conclusion**
 The RFM analysis provided valuable insights into customer behavior, allowing the e-commerce company to tailor marketing strategies effectively. By focusing on customer segments with specific characteristics, the company can enhance customer satisfaction, increase retention rates, and drive sales growth
