@@ -45,7 +45,7 @@ The process was done on Google Colaboratory.
 3. At-Risk Customers: Recommend re-engagement campaigns and targeted promotions. 
 4. Can't Lost Customers: Recommend onboarding programs and introductory offers. Implement re-engagement campaigns to bring them back.
 5. Lost Customers: Recommend reactivation campaigns and feedback collection.
-<iframe src="champion_rfm_distribution.html" width="800" height="600"></iframe>
+<iframe src="E:\Downloads/champion_rfm_distribution.html" width="800" height="600"></iframe>
 
 **Conclusion**
 The RFM analysis provided valuable insights into customer behavior, allowing the e-commerce company to tailor marketing strategies effectively. By focusing on customer segments with specific characteristics, the company can enhance customer satisfaction, increase retention rates, and drive sales growth
