@@ -44,19 +44,43 @@ The process was done on Google Colaboratory.
   `df['Recency_scores'] = pd.cut(df['Recency'], bins=5, labels=recency_scores)`
   `df['Frequency_scores'] = pd.cut(df['Frequency'], bins=5, labels=frequency_scores)`
   `df['Monetary_scores'] = pd.cut(df['Monetary'], bins=5, labels=monetary_scores)`
-
 ```
+
 **RFM Calculation**
 The process was done on Google Colaboratory.
-1. Recency: Days since the customer's last purchase.
-2. Frequency: Total number of purchases by the customer.
-3. Monetary: Total amount spent by the customer.
+ 1. Recency: Days since the customer's last purchase.
+ 2. Frequency: Total number of purchases by the customer.
+ 3. Monetary: Total amount spent by the customer.
+```
+  # New Column for RFM Customer Segments
+  df['RFM_Customer_Segments'] = ''
+   
+  # Assign RFM segments based on the RFM_Customer_Segments
+  df.loc[df['RFM_score'] >=9, 'RFM_Customer_Segments'] = 'Champions'
+  df.loc[(df['RFM_score'] >=6) & (df['RFM_score'] <9), 'RFM_Customer_Segments'] = 'Potential Loyalists'
+  df.loc[(df['RFM_score'] >=5) & (df['RFM_score'] <6), 'RFM_Customer_Segments'] = 'At Risk Customers'
+  df.loc[(df['RFM_score'] >=4) & (df['RFM_score'] <5), 'RFM_Customer_Segments'] ="Can't Lost Customers"
+  df.loc[(df['RFM_score'] >=3) & (df['RFM_score'] <4), 'RFM_Customer_Segments'] ='Lost Customers'
+  
+  # Make the Chart
+  final_segment = df.groupby(['RFM_segments', 'RFM_Customer_Segments']).size().reset_index(name='Count')
+  final_segment = final_segment.sort_values(by='Count', ascending=False)
+  fig_treemap_final_segment = px.treemap(final_segment,
+                                         path=['RFM_segments', 'RFM_Customer_Segments'],
+                                         values='Count',
+                                         color='RFM_segments',  color_discrete_sequence=px.colors.qualitative.Pastel,
+                                         title='RFM Customer Segments by Value')
+  
+  fig_treemap_final_segment.show()
+  ```
+![image](https://github.com/user-attachments/assets/46a5146e-32ed-494c-9bc1-f51e48680d7e)
 
 **RFM Segmentation**
 1. Segmented customers into different RFM categories using quintiles.
 2. Assigned RFM scores to each customer based on their Recency, Frequency, and Monetary values.
 3. Grouped customers into segments like "Champions", "Potential Loyalist", "At-Risk Customers", "Can't lost Customer", "Lost Customer", based on their RFM scores.
-![image](https://github.com/user-attachments/assets/46a5146e-32ed-494c-9bc1-f51e48680d7e)
+![image](https://github.com/user-attachments/assets/ca8d53cc-18a8-4026-be53-1733d8584f64)
+
 
 **Data Analysis & Visualization**
 1. Created various visualizations to explore the distribution of RFM values among different customer segments.
