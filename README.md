@@ -18,5 +18,5 @@ The RFM analysis provided valuable insights into customer behavior, allowing the
 3. At-Risk Customers: Low Recency but high Frequency and Monetary values. Recommend re-engagement campaigns and targeted promotions.
 4. Can't Lost Customers: Recent purchases but low Frequency and Monetary values. Recommend onboarding programs and introductory offers.
 5. Lost Customers: Low R, F, and M scores. Recommend reactivation campaigns and feedback collection.
-6. 
+   
 By focusing on customer segments with specific characteristics, the company can enhance customer satisfaction, increase retention rates, and drive sales growth.
