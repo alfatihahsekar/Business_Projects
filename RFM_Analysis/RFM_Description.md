@@ -23,28 +23,28 @@ The process was done on Google Colaboratory.
 1. Loaded and cleaned the dataset to handle missing values and correct data types.
 2. Filtered out cancellations and non-relevant transactions.
 3. Calculated the Recency, Frequency, and Monetary values for each customer.
-   ```
-   # Define Scoring criteria
+  
+ `# Define Scoring criteria`
   `recency_scores = [5,4,3,2,1] # high score for low recency`
-  frequency_scores = [1,2,3,4,5] # high score for high frequency
-  monetary_scores = [1,2,3,4,5] # high score for high monetary
+  `frequency_scores = [1,2,3,4,5] # high score for high frequency`
+  `monetary_scores = [1,2,3,4,5] # high score for high monetary`
 
-  df['Recency_scores'] = df['Recency_scores'].astype(int)
-  df['Frequency_scores'] = df['Frequency_scores'].astype(int)
-  df['Monetary_scores'] = df['Monetary_scores'].astype(int)
+  `df['Recency_scores'] = df['Recency_scores'].astype(int)`
+  `df['Frequency_scores'] = df['Frequency_scores'].astype(int)`
+  `df['Monetary_scores'] = df['Monetary_scores'].astype(int)`
   
-  # calculate RFM by combining individual R, F, M scores
-  df['RFM_score'] = df['Recency_scores'] + df['Frequency_scores'] + df['Monetary_scores']
+  `# calculate RFM by combining individual R, F, M scores`
+  `df['RFM_score'] = df['Recency_scores'] + df['Frequency_scores'] + df['Monetary_scores']`
   
-  # RFM Segment
-  labels = ['Low-Value', 'Mid-Value', 'High-Value']
-  df['RFM_segments'] = pd.qcut(df['RFM_score'], q=3, labels=labels)
+ ` # RFM Segment`
+ ` labels = ['Low-Value', 'Mid-Value', 'High-Value']`
+  `df['RFM_segments'] = pd.qcut(df['RFM_score'], q=3, labels=labels)`
   
-  # Calculate RFM Scores
-  df['Recency_scores'] = pd.cut(df['Recency'], bins=5, labels=recency_scores)
-  df['Frequency_scores'] = pd.cut(df['Frequency'], bins=5, labels=frequency_scores)
-  df['Monetary_scores'] = pd.cut(df['Monetary'], bins=5, labels=monetary_scores)
-  ```
+  `# Calculate RFM Scores`
+  `df['Recency_scores'] = pd.cut(df['Recency'], bins=5, labels=recency_scores)`
+  `df['Frequency_scores'] = pd.cut(df['Frequency'], bins=5, labels=frequency_scores)`
+  `df['Monetary_scores'] = pd.cut(df['Monetary'], bins=5, labels=monetary_scores)`
+
 **RFM Calculation**
 The process was done on Google Colaboratory.
 1. Recency: Days since the customer's last purchase.
