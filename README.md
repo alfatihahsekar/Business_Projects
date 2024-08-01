@@ -20,3 +20,6 @@ The RFM analysis provided valuable insights into customer behavior, allowing the
 5. Lost Customers: Low R, F, and M scores. Recommend reactivation campaigns and feedback collection.
    
 By focusing on customer segments with specific characteristics, the company can enhance customer satisfaction, increase retention rates, and drive sales growth.
+![image](https://github.com/user-attachments/assets/dfbb814c-e9c2-40e8-9f0d-8b5efe8dccf7)
+![image](https://github.com/user-attachments/assets/40053cca-e5c6-4f0c-be71-5e15dfd62a92)
+
